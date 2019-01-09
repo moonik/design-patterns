@@ -1,4 +1,4 @@
-# This repository contains examples of popular design patterns gathered from internet:
+# This repository contains examples of popular design patterns gathered from the internet:
 - [strategy](https://github.com/moonik/design-patterns/tree/master/src/main/java/app/strategy)
 - [singleton]()
 - [adapter]()

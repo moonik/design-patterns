@@ -1,8 +1,10 @@
 package app.factory;
 
-import app.factory.method.ArcherFactory;
+import app.factory.abstractf.Army;
+import app.factory.abstractf.ElfFactory;
+import app.factory.abstractf.HumanFactory;
+import app.factory.method.FactoryLoader;
 import app.factory.method.FactoryMethod;
-import app.factory.method.WarriorFactory;
 import app.factory.simple.SimpleFactory;
 
 public class Application {
@@ -17,17 +19,32 @@ public class Application {
 
         //Factory Method test
         factoryMethodTest();
+
+        //Abstract Factory test
+        abstractFactoryTest();
+    }
+
+    private static void abstractFactoryTest() {
+        System.out.println("Abstract factory test...");
+
+        Army humanArmy = new Army(new HumanFactory());
+        humanArmy.addMage();
+        humanArmy.addWarrior();
+        humanArmy.attack();
+
+        Army elfArmy = new Army(new ElfFactory());
+        elfArmy.addWarrior();
+        elfArmy.addMage();
+        elfArmy.attack();
     }
 
     private static void factoryMethodTest() {
         System.out.println("Factory Method test...");
-        Enemy archer = createEnemy(new ArcherFactory());
+        FactoryMethod archerFactory = FactoryLoader.getFactory("Archer");
+        Enemy archer = archerFactory.createEnemy();
         archer.attack();
-        Enemy warrior = createEnemy(new WarriorFactory());
+        FactoryMethod warriorFactory = FactoryLoader.getFactory("Warrior");
+        Enemy warrior = warriorFactory.createEnemy();
         warrior.attack();
-    }
-    
-    private static Enemy createEnemy(FactoryMethod factoryMethod) {
-        return factoryMethod.createEnemy();
     }
 }

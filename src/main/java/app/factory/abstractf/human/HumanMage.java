@@ -1,4 +1,6 @@
-package app.factory.abstractf;
+package app.factory.abstractf.human;
+
+import app.factory.abstractf.Mage;
 
 public class HumanMage implements Mage {
 

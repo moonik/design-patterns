@@ -1,8 +1,8 @@
 package app.factory;
 
 import app.factory.abstractf.Army;
-import app.factory.abstractf.ElfFactory;
-import app.factory.abstractf.HumanFactory;
+import app.factory.abstractf.elf.ElfFactory;
+import app.factory.abstractf.human.HumanFactory;
 import app.factory.method.FactoryLoader;
 import app.factory.method.FactoryMethod;
 import app.factory.simple.SimpleFactory;

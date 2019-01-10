@@ -1,4 +1,6 @@
-package app.factory.abstractf;
+package app.factory.abstractf.human;
+
+import app.factory.abstractf.Warrior;
 
 public class HumanWarrior implements Warrior {
 

@@ -1,4 +1,6 @@
-package app.factory.abstractf;
+package app.factory.abstractf.elf;
+
+import app.factory.abstractf.Warrior;
 
 public class ElfWarrior implements Warrior {
 

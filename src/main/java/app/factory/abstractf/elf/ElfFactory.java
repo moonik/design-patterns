@@ -1,4 +1,8 @@
-package app.factory.abstractf;
+package app.factory.abstractf.elf;
+
+import app.factory.abstractf.CharacterFactory;
+import app.factory.abstractf.Mage;
+import app.factory.abstractf.Warrior;
 
 public class ElfFactory extends CharacterFactory {
 

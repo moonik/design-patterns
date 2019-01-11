@@ -1,4 +1,4 @@
-package app.proxy;
+package app.proxy.image;
 
 public class RealImage implements Image {
 

@@ -1,6 +1,6 @@
-package app.proxy;
+package app.proxy.image;
 
-class ProxyImage implements Image {
+public class ProxyImage implements Image {
 
     private RealImage image;
     private String filename;

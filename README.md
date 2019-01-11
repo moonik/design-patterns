@@ -17,5 +17,5 @@
 - [memento]()
 - [iterator](https://github.com/moonik/design-patterns/tree/master/src/main/java/app/iterator)
 - [composite]()
-- [flyweight]()
+- [flyweight](https://github.com/moonik/design-patterns/tree/master/src/main/java/app/flyweight)
 - [builder](https://github.com/moonik/design-patterns/tree/master/src/main/java/app/builder)

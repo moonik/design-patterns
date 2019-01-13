@@ -23,14 +23,6 @@ public class Army {
         warriors.add(factory.createWarrior());
     }
 
-    public List<Mage> getMages() {
-        return mages;
-    }
-
-    public List<Warrior> getWarriors() {
-        return warriors;
-    }
-
     public void attack() {
         mages.forEach(Mage::cast);
         warriors.forEach(Warrior::attack);

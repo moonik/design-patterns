@@ -3,10 +3,10 @@ package app.composite;
 public class Application {
 
     public static void main(String[] args) {
-        SongComp dubstep = new SongGroup("DubStep", "Description of Dubstep group");
-        SongComp rock = new SongGroup("Rock", "Description of Rock Group");
-        SongComp any = new SongGroup("any song group", "any description");
-        SongComp industrial = new SongGroup("industrial", "industrial");
+        SongComponent dubstep = new SongGroup("DubStep", "Description of Dubstep group");
+        SongComponent rock = new SongGroup("Rock", "Description of Rock Group");
+        SongComponent any = new SongGroup("any song group", "any description");
+        SongComponent industrial = new SongGroup("industrial", "industrial");
 
         ((SongGroup) any).add(industrial);
         ((SongGroup) industrial).add(new Song("industrial song", "industrial song description", "213131"));

@@ -3,9 +3,6 @@ package app.strategy;
 public class Animal {
 
     private String name;
-    private double height;
-    private double weight;
-    private String sound;
 
     // Instead of using an interface in a traditional way
     // we use an instance variable that is a subclass
@@ -18,15 +15,6 @@ public class Animal {
     // Composition allows you to change the capabilities of
     // objects at run time!
     private Fly flyingType;
-
-    /* BAD
-    * You don't want to add methods to the super class.
-    * You need to separate what is different between subclasses
-    * and the super class
-    public void fly(){
-        System.out.println("I'm flying");
-    }
-    */
 
     // Animal pushes off the responsibility for flying to flyingType
     public String tryToFly() {
@@ -45,29 +33,5 @@ public class Animal {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    public double getWeight() {
-        return weight;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
-
-    public String getSound() {
-        return sound;
-    }
-
-    public void setSound(String sound) {
-        this.sound = sound;
     }
 }

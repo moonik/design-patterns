@@ -3,9 +3,9 @@ package app.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SongGroup implements SongComp {
+public class SongGroup implements SongComponent {
 
-    private List<SongComp> songComponents = new ArrayList<>();
+    private List<SongComponent> songComponents = new ArrayList<>();
     private String name;
     private String groupDescription;
 
@@ -14,21 +14,21 @@ public class SongGroup implements SongComp {
         this.groupDescription = groupDescription;
     }
 
-    public void add(SongComp component) {
+    public void add(SongComponent component) {
         this.songComponents.add(component);
     }
 
-    public void remove(SongComp component) {
+    public void remove(SongComponent component) {
         this.songComponents.remove(component);
     }
 
-    public SongComp get(int index) {
+    public SongComponent get(int index) {
         return this.songComponents.get(index);
     }
 
     @Override
     public void displayInfo() {
         System.out.println("Group name: " + name + ". Group description: " + groupDescription);
-        songComponents.forEach(SongComp::displayInfo);
+        songComponents.forEach(SongComponent::displayInfo);
     }
 }

@@ -1,6 +1,6 @@
 package app.composite;
 
-public class Song implements SongComp {
+public class Song implements SongComponent {
 
     private String name;
     private String bandName;

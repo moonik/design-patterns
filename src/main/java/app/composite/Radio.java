@@ -2,9 +2,9 @@ package app.composite;
 
 public class Radio {
 
-    private SongComp songs;
+    private SongComponent songs;
 
-    public Radio(SongComp songs) {
+    public Radio(SongComponent songs) {
         this.songs = songs;
     }
 
